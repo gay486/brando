@@ -500,40 +500,43 @@
         },
         section11Fn: function(){
             var win = $(window);
-            var blogright = $('#section11 .blog-right');
-            var blogLeft = $('#section11 .blog-left');
-            var blogListImgH = blogLeft.innerHeight();
-            var blogListImgW = blogLeft.innerWidth();
-            var fontRateH5 = 0.03963964;
-            var fontRateDiv = 0.064864865;
-            var fontSizeH5 = fontRateH5 * blogListImgW;
-            var fontSizeDiv = fontRateDiv * blogListImgW;
+            var blog = $('.blog');  // 4개 배열처리 메서드 each() 활용
+            var blogList = $('.blog li');  // 첫번째의 li
+            var blogListImgH = blogList.eq(0).innerHeight();  // 첫번째의 li의 높이
+            var fontRateH5 = 0.039711191;  // 폰트 비율
+            var fontRateP = 0.072202166;  // 폰트 비율
+            var blogListImgW = blogList.eq(0).innerWidth();  // 첫번째의 li의 너비
+            var fontSizeH5 = fontRateH5 * blogListImgW;  // 폰트사이즈 반응형 계산
+            var fontSizeP = fontRateP * blogListImgW;   // 폰트사이즈 반응형 계산
 
-                setTimeout(resizeFn,100);
 
-                function resizeFn(){
-                    blogListImgH = blogLeft.innerHeight();
-                    blogListImgW = blogLeft.innerWidth();
-                    fontSizeH5 = fontRateH5 * blogListImgW;
-                    fontSizeDiv = fontRateDiv * blogListImgW;
+            setTimeout(resizeFn,100);  // 로딩시
 
-                    fontSizeH5>11 ? fontSizeH5=11:fontSizeH5;
-                    fontSizeH5<8 ? fontSizeH5=8:fontSizeH5;
+            function resizeFn(){
+                blogListImgH = blogList.eq(0).innerHeight();
+                blogListImgW = blogList.eq(0).innerWidth();
+                fontSizeH5 = fontRateH5 * blogListImgW;
+                fontSizeP = fontRateP * blogListImgW;
 
-                    fontSizeDiv>18 ? fontSizeDiv=18:fontSizeDiv;
-                    fontSizeDiv<15 ? fontSizeDiv=15:fontSizeDiv;
+                fontSizeH5>11 ? fontSizeH5=11:fontSizeH5;
+                fontSizeH5<8 ? fontSizeH5=8:fontSizeH5;
+                
+                fontSizeP>18 ? fontSizeP=18:fontSizeP;
+                fontSizeP<15 ? fontSizeP=15:fontSizeP;
 
-                    blogright.css({height:blogListImgH});
-                    blogright.find('h5').css({fontSize:fontSizeH5});
-                    blogright.find('a').css({fontSize:fontSizeDiv});
 
-                }
 
-                win.resize(function(){
-                    resizeFn();
+                blog.each(function(idx){
+                    blog.eq(idx).children('li').eq(1).css({height:blogListImgH});  // 배열처리
+                    blog.eq(idx).find('h5').css({fontSize:fontSizeH5});
+                    blog.eq(idx).find('p').css({fontSize:fontSizeP});
                 });
+            }
 
 
+            win.resize(function(){
+                resizeFn();
+            });
 
         },
         section12Fn: function(){

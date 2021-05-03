@@ -307,25 +307,26 @@ main #section10 .wrap .gap .content .slide-container .prev-btn-wrap a i {width:1
 #main #section11 .wrap .gap {width:100%;}
 #main #section11 .wrap .gap .title-wrap h2 {color:#fff;}
 #main #section11 .wrap .gap .content {width:100%;}
-#main #section11 .wrap .gap .content ul {width:100%;}
-#main #section11 .wrap .gap .content ul li {float:left;width:50%;}
-#main #section11 .wrap .gap .content ul li .blog-wrap {position:relative;margin:15px;background:#fff;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-left {float:left;width:50%;overflow:hidden;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-left div {width:100%;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-left div a {display:block;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-left div a img {width:100%;transition:all .4s;}
-#main #section11 .wrap .gap .content ul li .blog-wrap:hover .blog-left div a img {transform:scale(1.12);}
-#main #section11 .wrap .gap .content ul li .blog-wrap:focus {outline:0;}
-#main #section11 .wrap .gap .content ul li .blog-wrap:focus .blog-left div a img {transform:scale(1.12);}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-right {position:relative;float:left;width:50%;text-align:center;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-right:before {content:"";display:block;position:absolute;top:50%;left:-30px;margin-top:-15px;border:15px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent;border-left:15px solid transparent;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-right > div {width:100%;height:100%;display:table;overflow:hidden;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-right > div > div {display:table-cell;vertical-align:middle;text-align:center;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-right > div > div h5 {font-size:11px;font-weight:500;line-height:180%;color:#ababab;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-right > div > div p {font-size:18px;font-weight:500;line-height:150%;padding:7.2202166% 14.4404332%;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-right > div > div p a {color:#626262;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-right > div > div h6 {padding-top:5.585586%;}
-#main #section11 .wrap .gap .content ul li .blog-wrap .blog-right > div > div h6 i {display:inline-block;width:30px;height:4px;background:#c8a64b;}
+#main #section11 .wrap .gap .content > ul {width:100%;}
+#main #section11 .wrap .gap .content > ul > li {float:left;width:50%;}
+#main #section11 .wrap .gap .content > ul > li > div {margin:15px;}
+#main #section11 .wrap .gap .content > ul > li > div > ul {width:100%;background:#fff;}
+#main #section11 .wrap .gap .content > ul > li > div > ul > li {position:relative;float:left;width:50%;}
+#main #section11 .wrap .gap .content > ul > li > div > ul > li:nth-child(2) {height:277px;}
+#main #section11 .wrap .gap .content > ul > li > div > ul > li:nth-child(2):before {content:'';display:block;position:absolute;top:50%;left:-30px;margin-top:-15px;border:15px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent;border-left:15px solid transparent;} 
+#main #section11 .wrap .gap .content > ul > li > div > ul > li > a {width:100%;height:100%;overflow:hidden;display:table;}
+#main #section11 .wrap .gap .content > ul > li > div > ul > li > a img {width:100%;transition:all .3s;}
+#main #section11 .wrap .gap .content > ul > li:hover > div > ul > li > a img {transform:scale(1.15);}
+#main #section11 .wrap .gap .content > ul > li:focus {outline:0;}
+#main #section11 .wrap .gap .content > ul > li:focus > div > ul > li > a img {transform:scale(1.15);}
+
+#main #section11 .wrap .gap .content > ul > li > div > ul > li > div {width:100%;height:100%;overflow:hidden;display:table;}
+#main #section11 .wrap .gap .content > ul > li > div > ul > li > div > div {display:table-cell;vertical-align:middle;text-align:center;}
+#main #section11 .wrap .gap .content > ul > li > div > ul > li > div > div h5 {font-size:11px;color:#ababab;}
+#main #section11 .wrap .gap .content > ul > li > div > ul > li > div > div p {font-size:18px;line-height:150%;padding:7.2202166% 14.4404332%;}
+#main #section11 .wrap .gap .content > ul > li > div > ul > li > div > div p a {color:#626262;}
+#main #section11 .wrap .gap .content > ul > li > div > ul > li > div > div h6 {width:100%;}
+#main #section11 .wrap .gap .content > ul > li > div > ul > li > div > div h6 i {display:inline-block;width:30px;height:2.2px;background:#c8a64b;}
 
 
 

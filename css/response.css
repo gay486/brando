@@ -87,7 +87,7 @@
 }
 
 @media all and (max-width:900px){
-    #main #section11 .wrap .gap .container .content ul li {float:none;width:100%;margin:0 auto;}
+    #main #section11 .wrap .gap .content > ul > li {float:none;width:100%;margin:0 auto;}
 
     #main #section14 .wrap .gap .container > ul .left {float:none;width:100%;}
     #main #section14 .wrap .gap .container > ul .right {float:none;width:100%;}
@@ -154,10 +154,9 @@
 
     #main #section10 .wrap .gap .content .slide-container .slide-view .slide-wrap .slide > div .box .right .txt-wrap p {line-height:150%;width:90%;}
 
-    #main #section11 .wrap .gap .container .content ul li .blog-wrap .blog-left {float:none;width:100%;}
-    #main #section11 .wrap .gap .container .content ul li .blog-wrap .blog-right {float:none;width:100%;}
-    #main #section11 .wrap .gap .container .content ul li .blog-wrap .blog-right:before {content:"";display:block;position:absolute;top:-15px;left:50%;margin-left:-15px;border:15px solid #fff;border-top:15px solid transparent;border-right:15px solid transparent;border-left:15px solid transparent;}
-
+    #main #section11 .wrap .gap .content > ul > li > div ul li {float:none;width:100%;}
+    #main #section11 .wrap .gap .content > ul > li > div ul li:nth-child(2):before {content:'';display:block;position:absolute;top:-15px;left:50%;margin-left:-15px;border:15px solid #fff;border-top:15px solid transparent;border-left:15px solid transparent;border-right:15px solid transparent;} 
+    
     #main #section13 .wrap .gap .container ul li {width:100%;padding:30px 0;}
     #main #section13 .wrap .gap .container ul li div {border-right:0;}
 
